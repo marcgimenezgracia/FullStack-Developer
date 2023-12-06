@@ -1,32 +1,57 @@
-<head>
-    <h1>Joyas del Sudeste Asiático</h1>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Formularios en HTML</h1>
+        </header>
 
-    <nav>
-    <figure>
-    <ul>
+        <form>
+            <h2>Datos Personales</h2>
 
-<li>
-    <a href="Bali.html">
-    <img src="./imagenes/Bali.webp" alt="Imagen de Bali" height="200"></a>
-    <figcaption> Ésta es una imágen de Bali</figcaption>
-</li>
+            <label for='name'>Nombre:</label>
+            <input id='name' type='text' name='name' required placeholder="Tu nombre">
+            <br />
+            <label for='email'>Correo electrónico:</label>
+            <input id='email' type="email" name='email' required placeholder="Tu mejor email">
+            <br />
+            <label for='phone'>Teléfono:</label>
+            <input id='phone' typer="tel" name='phone' required placeholder="+34 123456789">
 
-<li>
-    <a href="Thailand.html">
-    <img src="imagenes/Thailand.jpeg" alt="Imagen de Thailand" height="200"></a>
-    <figcaption> Ésta es una imágen de Thailand</figcaption>
-</li>
+            <h2>Género</h2>
+            <input id="Masculino" type="radio" value="Masculino" name="Género"/>
+            <label for="Masculino"></label>Masculino</label>
+            <br />
+            <input id="Femenino" type="radio" value="Femenino" name="Género"/>
+            <label for="Femenino"></label>Femenino</label>
+            <br />
+            <input id="Otro" type="radio" value="Otro" name="Género"/>
+            <label for="Otro"></label>Otro</label>
 
-<li>
-    <a href="Vietnam.html">
-    <img src="./imagenes/vietnam.jpg" alt="Imagen de Vietnam" height="200"></a>
-    <figcaption> Ésta es una imágen de Vietnam</figcaption>
-</li>
+            <h2>Preferencias</h2>
 
-    </ul>
-    </figure>
-    </nav>
+            <input id="Música" type="checkbox" value="Música" name="Música"/>
+            <label for="Música"></label>Música</label>
+            <br />
+            <input id="Deportes" type="checkbox" value="Deportes" name="Deportes"/>
+            <label for="Deportes"></label>Deportes</label>
+            <br />
+            <input id="Lectura" type="checkbox" value="Lectura" name="Lectura"/>
+            <label for="Lectura"></label>Lectura</label>
 
-</body>
+            <h2>Comentarios</h2>
+            <textarea cols="50" rows="10" maxlength="100" placeholder="Escribe aquí tu texto."></textarea>
+
+            </br />
+
+            <button>Enviar</button>
+
+        </form>
+    </body>
+
+</html>
